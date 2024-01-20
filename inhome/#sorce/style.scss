@@ -1,0 +1,35 @@
+html {
+    font-size: 15px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Salsa:regular);
+@import "container";
+@import "normal";
+@import "vars";
+@import "header";
+body {
+    font-family: "salsa";
+    color: #000;
+    background-color: $bg;
+}
+@import "sprite";
+@import "btn";
+@import "intro";
+@import "projects";
+@import "projects-sliders";
+@import "about";
+@import "about__slider";
+@import "reviews";
+@import "slider__video";
+@import "Applications";
+@import "Applications__inputs";
+
+
+
+
+
+
+
+
+
+

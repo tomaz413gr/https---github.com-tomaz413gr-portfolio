@@ -1,0 +1,92 @@
+/* slider__why */
+.slider__why {
+    display: none;
+
+    @media (max-width:800px) {
+        display: block;
+    }
+}
+
+.slider__why {
+    position: relative;
+    padding-bottom: 4rem;
+    
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        li {
+            list-style: none;
+            padding: 0 .5333rem;
+        }
+
+        button {
+            width: .6667rem;
+            height: .6667rem;
+            font-size: 0;
+            background-color: transparent;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            border: solid .0667rem $black;
+        }
+
+        li.slick-active button {
+            transition: background-color .3s linear;
+            background-color: $black;
+        }
+
+    }
+
+}
+
+.why__itemList {
+    text-align: -webkit-center;
+    
+
+}
+
+.why__oreol {
+
+    height: 7.5333rem;
+    width: 7.5333rem;
+    border-radius: 6rem;
+    border: .0667rem solid #6C7188;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.4667rem;
+
+}
+
+// .oreol__bg {
+//     width: 6.2rem;
+//     height: 6.2rem;
+//     border-radius: 6rem;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+.circle__info {
+    width: 18.6667rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    padding: 0 2rem;
+}
+
+.oreol__content {
+    color: $bluelight;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-transform: uppercase;
+}

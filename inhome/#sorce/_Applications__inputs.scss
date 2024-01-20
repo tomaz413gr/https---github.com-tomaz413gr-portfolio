@@ -1,0 +1,61 @@
+.Applications {
+    p {
+        color: $gray;
+        font-size: clamp(0.66rem, 0.606rem + 0.27vw, 0.93rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        padding-left: 18%;
+
+        @media (max-width: 601px) {
+            padding-left: 0%;
+        }
+        @media (max-width: 501px) {
+            text-align: center;
+            }
+    }
+}
+
+.Applications__inputs {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-left: 18%;
+    margin-bottom: .9333rem;
+
+    @media (max-width: 601px) {
+        padding-left: 0%;
+    }
+
+    @media (max-width: 501px) {
+        margin: 0 auto;
+
+    }
+
+    .input__item {
+        min-width: 16.8rem;
+        flex-basis: 20%;
+        color: $gray;
+        font-size: clamp(0.8rem, 0.76rem + 0.2vw, 1rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        border-bottom: 1px $gray solid;
+        padding: .6667rem;
+
+        @media (max-width: 501px) {
+            margin: 0 auto;
+
+        }
+    }
+
+    .btn {
+        @media (max-width:1333px) {
+            padding: .4333em 1.4em;
+        }
+        @media (max-width: 501px) {
+            margin:0 auto;
+            margin-bottom: 1%;
+            }
+    }
+}

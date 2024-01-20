@@ -1,0 +1,38 @@
+.Applications {
+    background-color: $Applications;
+    padding: 6.2% 0;
+}
+.Applications__title {
+    display: flex;
+    margin-bottom: 3.1%;
+
+
+
+    h1 {
+        flex-basis: 50%;
+        color: $white;
+        font-size: clamp(1.6rem, 1.413rem + 0.93vw, 2.533rem);
+        font-weight: 600;
+        line-height: 135%;
+        text-transform: uppercase;
+        @media (max-width: 1333px) {
+            margin:0 auto;
+            text-align: center;
+        
+        }
+    }
+
+    p {
+        flex-basis: 50%;
+        color: $gray;
+        font-size: clamp(0.9rem, 0.8rem + 0.5vw, 1.4rem);
+        font-weight: 400;
+        line-height: 150%;
+        text-align: end;
+        @media (max-width: 1333px) {
+            display: none;
+        
+        }
+    }
+
+}

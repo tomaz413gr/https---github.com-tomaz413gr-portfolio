@@ -1,0 +1,136 @@
+.sliders__wrapper {
+    position: relative;
+    display: flex;
+    margin: 2.6667rem 0;
+    padding-left: 10%;
+    @media (max-width:700px) {
+        padding-left: 0%;
+        }
+}
+
+.container_slider {
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.slider__video {
+    .slick-arrow {
+        width: 3.3333rem;
+        height: 1.0667rem;
+        background-color: transparent;
+        border-radius: 1.3333rem;
+        border: .0667rem $gray solid;
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        font-size: 0;
+
+        @media (max-width:1505px) {
+            width: 5.0333rem;
+            height: 1.5667rem;
+        }
+
+        &.slick-prev {
+            left: 0;
+            top: 94%;
+            background: url(/inhome/img/leftarrow.svg) center center no-repeat;
+            transition: background-image .3s linear, border-color .3s linear;
+
+            @media (max-width:1505px) {
+                left: 0%;
+                top: 54%;
+            }
+
+            &:hover {
+                background: url(/inhome/img/leftarrow_white.svg) center center no-repeat;
+                border-color: white;
+            }
+
+        }
+
+        &.slick-next {
+            left: 4%;
+            top: 94%;
+            background: url(/inhome/img/rightarrow.svg) center center no-repeat;
+            transition: background-image .3s linear, border-color .3s linear;
+
+            @media (max-width:1505px) {
+                right: 0%;
+                top: 54%;
+            }
+
+
+            &:hover {
+                background: url(/inhome/img/rightarrow_white.svg) center center no-repeat;
+                border-color: white;
+            }
+        }
+
+    }
+}
+
+
+
+.slider__wrapper--video {
+    display: flex;
+    gap: 2rem;
+
+    .video__reviews {
+        width: 50%;
+        border-radius: 20px;
+
+        @media (max-width:1360px) {
+            width: 70%;
+
+        }
+        @media (max-width:700px) {
+        width: 90%;
+        }
+
+
+
+
+        @media (max-width:1360px) {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3%;
+
+        }
+    }
+
+    .slider__info--video {
+
+
+
+
+        h4 {
+            color: $black;
+            font-size: clamp(1rem, 0.938rem + 0.31vw, 1.313rem);
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%;
+        }
+
+        time {
+            color: $gray;
+            font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+        }
+
+        p {
+            color: $graydark;
+            font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+        }
+
+    }
+
+
+    @media (max-width:1360px) {
+        display: block;
+    }
+}

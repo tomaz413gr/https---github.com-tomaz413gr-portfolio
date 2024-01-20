@@ -1,0 +1,133 @@
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 0;
+
+    a:not(.logo--a) {
+        font-family: "salsa";
+        font-size: 1.0667rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $black;
+        opacity: .6;
+        transition: opacity .3s linear;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 0;
+            height: .0667rem;
+            background-color: $black;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            z-index: 1;
+            transition: width .2s linear;
+
+        }
+
+        &:hover {
+            opacity: 1;
+
+            &:after {
+                width: 100%;
+            }
+
+        }
+
+
+    }
+    @media (max-width:768px) {
+        padding: 13px 0;
+        };
+
+}
+
+.header__inner--item {
+    display: flex;
+
+    &>.logo {
+        margin-right: 4rem;
+    }
+
+
+
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+
+
+    a:not(:last-child) {
+        margin-right: 4rem;
+    }
+    @media (max-width:768px) {
+    display: none;
+    };
+
+
+}
+
+.border {
+    width: 100%;
+    height: 1px;
+    background-color: $black;
+    opacity: .5;
+    box-shadow: 2px 1px 1px #857e7e;
+}
+
+.logo__svg {
+    height: 31px;
+    width: 100px;
+}
+
+.nav__a--order {
+    order: 2;
+    @media (max-width:768px) {
+        display: none;
+    }
+
+    
+}
+
+// .nav__a--order:before {
+//     content: '';
+//     width: 27px;
+//     height: 27px;
+//     background-color: black;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 1;
+
+    
+    
+    
+// }
+
+.burger {
+    display: none;
+    order: 2;
+    width: 40px;
+    height: 30px;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width:768px) {
+        display: block;
+        // order: 1;
+    }
+span {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    height: 2px;
+    background-color: $black;
+   
+}
+
+}
