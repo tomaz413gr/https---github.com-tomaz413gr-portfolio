@@ -883,7 +883,7 @@ body {
   gap: 2rem;
 }
 .slider__wrapper--video .video__reviews {
-  width: 50%;
+  width: 100%;
   border-radius: 20px;
 }
 @media (max-width: 1360px) {
