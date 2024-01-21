@@ -40,7 +40,6 @@ $(document).ready(function () {
         arrows: false
     })
 
-    // slider__video
 
     $('.slider__video').slick({
         dots: false,
