@@ -1,6 +1,9 @@
 .Applications {
     background-color: $Applications;
     padding: 6.2% 0;
+    .border {
+        margin-bottom: 1.7333rem;
+    }
 }
 .Applications__title {
     display: flex;

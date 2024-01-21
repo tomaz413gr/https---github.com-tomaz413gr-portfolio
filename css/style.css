@@ -827,6 +827,11 @@ body {
   max-width: 85%;
   margin: 0 auto;
 }
+@media (max-width: 700px) {
+  .container_slider {
+    max-width: 100%;
+  }
+}
 
 .slider__video .slick-arrow {
   width: 3.3333rem;
@@ -883,7 +888,7 @@ body {
   gap: 2rem;
 }
 .slider__wrapper--video .video__reviews {
-  width: 100%;
+  width: 50%;
   border-radius: 20px;
 }
 @media (max-width: 1360px) {
@@ -933,6 +938,9 @@ body {
 .Applications {
   background-color: #272727;
   padding: 6.2% 0;
+}
+.Applications .border {
+  margin-bottom: 1.7333rem;
 }
 
 .Applications__title {
