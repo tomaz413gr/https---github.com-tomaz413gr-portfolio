@@ -3,27 +3,102 @@
     padding: 6.2% 0 2%;
 }
 
+.footer--hidden {
+    .logo__svg {
+        display: block;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-bottom: 1rem;
+    }
+
+    .footer__tel {
+        color: $black;
+        font-size: clamp(1.06rem, 0.992rem + 0.34vw, 1.4rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+
+    address,
+    p {
+        text-align: center;
+    }
+
+   
+
+    a {
+        opacity: .6;
+        transition: opacity .3s linear;
+        position: relative;
+        font-family: "salsa";
+        font-size: 1.0667rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+        color: $black;
+
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+}
+
 .footer__inner {
     display: flex;
     padding-top: 2%;
-    
+
+    @media (max-width:1289px) {
+        justify-content: center;
+    }
+
 
     .footer__item {
-        height: 9.0667rem;
+        height: 136px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
 
+        &--hidden {
+            @media (max-width:1289px) {
+                display: none;
+            }
+        }
 
+        a {
+            opacity: .6;
+            transition: opacity .3s linear;
+            position: relative;
+            font-family: "salsa";
+            font-size: 1.0667rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+            color: $black;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
 
         &:not(:last-child) {
             border-right: .0667rem $border solid;
             padding-right: 17.1%;
+
+            @media (max-width:1289px) {
+                padding-right: 3%;
+                text-align: right;
+            }
+
         }
 
         &:not(:first-child) {
-            padding-left: 2rem;
+            padding-left: 1.7%;
+
+            @media (max-width:1289px) {
+                padding-left: 3%;
+            }
         }
 
         .logo__svg {
@@ -37,6 +112,12 @@
             font-style: normal;
             font-weight: 400;
             line-height: 150%;
+            text-wrap: nowrap;
+        }
+
+        a,
+        address {
+            text-wrap: nowrap;
         }
 
         .footer__tel {
