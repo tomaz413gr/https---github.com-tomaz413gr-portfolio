@@ -1047,11 +1047,30 @@ body {
   padding: 6.2% 0 2%;
 }
 
+.footer--hidden {
+  display: none;
+}
+@media (max-width: 1289px) {
+  .footer--hidden {
+    display: block;
+    margin-top: 3.3333rem;
+  }
+}
+@media (max-width: 480px) {
+  .footer--hidden {
+    margin-top: 1.6333rem;
+  }
+}
 .footer--hidden .logo__svg {
   display: block;
   margin: 0 auto;
   margin-top: 3%;
   margin-bottom: 1rem;
+}
+@media (max-width: 480px) {
+  .footer--hidden .logo__svg {
+    margin-bottom: 0.3rem;
+  }
 }
 .footer--hidden .footer__tel {
   color: #000;
@@ -1096,6 +1115,11 @@ body {
 @media (max-width: 1289px) {
   .footer__inner {
     justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .footer__inner {
+    padding-top: 8%;
   }
 }
 .footer__inner .footer__item {

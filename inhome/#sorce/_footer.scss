@@ -5,12 +5,26 @@
 
 .footer--hidden {
 
-    // display: none;
+    display: none;
+
+    @media (max-width:1289px) {
+        display: block;
+        margin-top: 3.3333rem;
+    }
+
+    @media (max-width:480px) {
+        margin-top: 1.6333rem;
+    }
+
     .logo__svg {
         display: block;
         margin: 0 auto;
         margin-top: 3%;
         margin-bottom: 1rem;
+
+        @media (max-width:480px) {
+            margin-bottom: 0.3rem;
+        }
     }
 
     .footer__tel {
@@ -66,6 +80,10 @@
 
     @media (max-width:1289px) {
         justify-content: center;
+    }
+
+    @media (max-width:480px) {
+        padding-top: 8%;
     }
 
 
