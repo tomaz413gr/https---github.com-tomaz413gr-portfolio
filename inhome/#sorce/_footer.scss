@@ -4,6 +4,8 @@
 }
 
 .footer--hidden {
+
+    // display: none;
     .logo__svg {
         display: block;
         margin: 0 auto;
@@ -25,23 +27,36 @@
         text-align: center;
     }
 
-   
 
     a {
+
+        width: fit-content;
         opacity: .6;
         transition: opacity .3s linear;
-        position: relative;
         font-family: "salsa";
         font-size: 1.0667rem;
         font-style: normal;
         font-weight: 400;
+        text-shadow: none;
+        transition: text-shadow .1s linear;
         line-height: 1.5;
         color: $black;
 
         &:hover {
             opacity: 1;
+
         }
 
+        &:not(.link__opacity):hover {
+            text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3),
+                0px -4px 10px rgba(255, 255, 255, 0.3);
+        }
+
+    }
+
+    .link__opacity {
+        opacity: 1;
+        display: inline-block;
     }
 }
 
@@ -67,19 +82,31 @@
         }
 
         a {
+            width: fit-content;
             opacity: .6;
             transition: opacity .3s linear;
-            position: relative;
             font-family: "salsa";
             font-size: 1.0667rem;
             font-style: normal;
             font-weight: 400;
             line-height: 1.5;
+            text-shadow: none;
+            transition: text-shadow .1s linear;
             color: $black;
 
             &:hover {
                 opacity: 1;
+
             }
+
+            &:not(.link__opacity):hover {
+                text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3),
+                    0px -4px 10px rgba(255, 255, 255, 0.3);
+            }
+        }
+
+        .link__opacity {
+            opacity: 1;
         }
 
         &:not(:last-child) {
@@ -127,6 +154,7 @@
             font-weight: 700;
             line-height: 150%;
             text-transform: uppercase;
+
         }
     }
 }

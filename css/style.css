@@ -111,6 +111,8 @@ legend {
   line-height: 1.5;
   color: #000;
   opacity: 0.6;
+  text-shadow: none;
+  transition: text-shadow 0.1s linear;
   transition: opacity 0.3s linear;
   position: relative;
 }
@@ -127,6 +129,7 @@ legend {
 }
 .header__inner a:not(.logo--a):hover {
   opacity: 1;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
 }
 .header__inner a:not(.logo--a):hover:after {
   width: 100%;
@@ -1063,18 +1066,27 @@ body {
   text-align: center;
 }
 .footer--hidden a {
+  width: fit-content;
   opacity: 0.6;
   transition: opacity 0.3s linear;
-  position: relative;
   font-family: "salsa";
   font-size: 1.0667rem;
   font-style: normal;
   font-weight: 400;
+  text-shadow: none;
+  transition: text-shadow 0.1s linear;
   line-height: 1.5;
   color: #000;
 }
 .footer--hidden a:hover {
   opacity: 1;
+}
+.footer--hidden a:not(.link__opacity):hover {
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+.footer--hidden .link__opacity {
+  opacity: 1;
+  display: inline-block;
 }
 
 .footer__inner {
@@ -1098,17 +1110,25 @@ body {
   }
 }
 .footer__inner .footer__item a {
+  width: fit-content;
   opacity: 0.6;
   transition: opacity 0.3s linear;
-  position: relative;
   font-family: "salsa";
   font-size: 1.0667rem;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
+  text-shadow: none;
+  transition: text-shadow 0.1s linear;
   color: #000;
 }
 .footer__inner .footer__item a:hover {
+  opacity: 1;
+}
+.footer__inner .footer__item a:not(.link__opacity):hover {
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+.footer__inner .footer__item .link__opacity {
   opacity: 1;
 }
 .footer__inner .footer__item:not(:last-child) {

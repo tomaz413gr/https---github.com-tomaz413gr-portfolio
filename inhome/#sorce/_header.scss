@@ -12,6 +12,8 @@
         line-height: 1.5;
         color: $black;
         opacity: .6;
+        text-shadow: none;
+        transition: text-shadow .1s linear;
         transition: opacity .3s linear;
         position: relative;
 
@@ -30,6 +32,8 @@
 
         &:hover {
             opacity: 1;
+            text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3),
+                0px -4px 10px rgba(255, 255, 255, 0.3);
 
             &:after {
                 width: 100%;
