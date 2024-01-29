@@ -97,6 +97,10 @@ legend {
   display: block;
 }
 
+.header {
+  background-color: #EBEBEB;
+}
+
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -182,28 +186,6 @@ legend {
   }
 }
 
-.burger {
-  display: none;
-  order: 2;
-  width: 40px;
-  height: 30px;
-  background-color: transparent;
-  flex-direction: column;
-  justify-content: space-between;
-}
-@media (max-width: 768px) {
-  .burger {
-    display: block;
-  }
-}
-.burger span {
-  display: block;
-  margin-top: 10px;
-  width: 100%;
-  height: 2px;
-  background-color: #000;
-}
-
 body {
   font-family: "salsa";
   color: #000;
@@ -234,71 +216,75 @@ body {
   color: #fff;
 }
 
+.intro {
+  margin-top: 76px;
+}
+
 .intro__inner img {
   width: 100%;
   height: auto;
-  border-radius: 1.3333rem;
-  margin: 1.25rem 0;
+  border-radius: 19.9995px;
+  margin: 18.75px 0;
 }
-@media (max-width: 550px) {
+@media (max-width: 36.6667rem) {
   .intro__inner img {
-    height: 13.3333rem;
+    height: 199.9995px;
     object-fit: cover;
-    margin: 0.55rem 0;
+    margin: 8.25px 0;
   }
 }
 .intro__inner h1 {
-  max-width: 53.3333rem;
+  max-width: 799.9995px;
   color: #000;
-  font-size: 2.3333rem;
+  font-size: 34.9995px;
   font-weight: 600;
   line-height: 1.3;
   text-transform: uppercase;
   display: inline-block;
 }
-@media (max-width: 768px) {
+@media (max-width: 51.2rem) {
   .intro__inner h1 {
-    font-size: 1.8333rem;
+    font-size: 27.4995px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 32rem) {
   .intro__inner h1 {
-    font-size: 1.2333rem;
+    font-size: 18.4995px;
   }
 }
 
 .intro__title--box {
-  margin: 2rem 0;
+  margin: 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 1090px) {
+@media (max-width: 72.6667rem) {
   .intro__title--box {
     display: block;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 40rem) {
   .intro__title--box {
-    margin: 1rem 0;
+    margin: 15px 0;
   }
 }
-@media (max-width: 1090px) {
+@media (max-width: 72.6667rem) {
   .intro__title--box .btn {
-    margin-top: 1rem;
+    margin-top: 15px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 40rem) {
   .intro__title--box .btn {
     padding: 0.4333em 1.4em;
-    margin: 1rem 0;
+    margin: 15px 0;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 32rem) {
   .intro__title--box .btn {
     padding: 0.2333em 0.7em;
-    margin: 0.5rem 0;
-    font-size: 0.8rem;
+    margin: 7.5px 0;
+    font-size: 12px;
   }
 }
 
@@ -1039,6 +1025,7 @@ body {
   .Applications__inputs .btn {
     margin: 0 auto;
     margin-bottom: 1%;
+    padding: 0.2333em 0.7em;
   }
 }
 
@@ -1196,4 +1183,82 @@ body {
 
 .block__center {
   text-align: center;
+}
+
+.burger {
+  display: none;
+  order: 2;
+  width: 40px;
+  height: 30px;
+  background-color: transparent;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+}
+.burger span {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+}
+
+.burger__menu {
+  display: none;
+  width: 100%;
+  background: #363A4D;
+  box-shadow: 14px 22px 40px 0px rgba(30, 35, 66, 0.28);
+  flex-direction: column;
+  padding: 20px 0;
+  transform: translateY(-136%);
+}
+
+.burger__menu.menu__open {
+  display: flex;
+  position: fixed;
+  z-index: 9;
+  animation: fadeInFromNone 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    transform: translateY(-136%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.burger__menu {
+  display: flex;
+  position: fixed;
+  z-index: 9;
+  animation: fadeOutFromBlock 0.5s ease-in-out;
+}
+
+@keyframes fadeOutFromBlock {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+.burger__menu a {
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  line-height: 2.22;
+}
+
+.burger__menu a:hover {
+  color: #979595;
+}
+
+.menu__rel {
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

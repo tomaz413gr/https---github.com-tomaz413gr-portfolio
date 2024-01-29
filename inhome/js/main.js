@@ -62,4 +62,12 @@ $(document).ready(function () {
         ]
     })
 
+    // Burger__menu
+
+const burger = document.querySelector('.burger');
+const burgerMenu = document.querySelector('.burger__menu');
+burger.addEventListener('click', () => {
+    burgerMenu.classList.toggle('menu__open');
+})
+
 })
