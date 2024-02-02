@@ -22,63 +22,76 @@
 }
 
 .burger__menu {
-    display: none;
+    // display: none;
     width: 100%;
     background: #363A4D;
     box-shadow: 14px 22px 40px 0px rgba(30, 35, 66, 0.28);
     flex-direction: column;
     padding: 20px 0;
-    transform: translateY(-136%);
-}
-
-.burger__menu.menu__open {
-    display: flex;
-    position: fixed;
-    z-index: 9;
-    animation: fadeInFromNone 0.5s ease-in-out;
-    animation-fill-mode: forwards;
-
-}
-
-@keyframes fadeInFromNone {
-    0% {
-        transform: translateY(-136%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
-}
-
-.burger__menu {
-    display: flex;
-    position: fixed;
-    z-index: 9;
+    transform: translateY(-150%);
     animation: fadeOutFromBlock 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    
 
-}
+    @keyframes fadeOutFromBlock {
+        0% {
+            transform: translateY(0%);
 
-@keyframes fadeOutFromBlock {
-    0% {
-        transform: translateY(0%);
+        }
 
+        100% {
+            transform: translateY(-150%);
+        }
     }
 
-    100% {
-        transform: translateY(-100%);
+    &.menu__open {
+        display: flex;
+        position: fixed;
+        z-index: 8;
+        animation: fadeInFromNone 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+
+        @keyframes fadeInFromNone {
+            0% {
+                transform: translateY(-150%);
+            }
+
+            100% {
+                transform: translateY(0%);
+            }
+        }
     }
+
+    a {
+        color: #FFF;
+        text-align: center;
+        font-size: 24px;
+        line-height: 2.22;
+
+        &:hover {
+            color: #979595;
+        }
+    }
+
+
+
+
 }
 
-.burger__menu a {
-    color: #FFF;
-    text-align: center;
-    font-size: 24px;
-    line-height: 2.22;
-}
 
-.burger__menu a:hover {
-    color: #979595;
-}
+
+
+// .burger__menu {
+//     display: flex;
+//     position: fixed;
+//     z-index: 9;
+
+
+// }
+
+
+
+
 .menu__rel {
     position: relative;
 }

@@ -1,12 +1,16 @@
 .header {
- background-color: $bg;
+    background-color: $bg;
+    width: 100%;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+
+
 }
 .header__inner {
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // z-index: 11;
-    // width: 94rem;
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
