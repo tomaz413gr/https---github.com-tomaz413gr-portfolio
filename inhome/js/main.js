@@ -64,10 +64,12 @@ $(document).ready(function () {
 
     // Burger__menu
 
-const burger = document.querySelector('.burger');
+const hamburger__lines = document.querySelector('.hamburger__lines');
 const burgerMenu = document.querySelector('.burger__menu');
-burger.addEventListener('click', () => {
+hamburger__lines.addEventListener('click', function(e) {
+    e.preventDefault();
     burgerMenu.classList.toggle('menu__open');
+    hamburger__lines.classList.toggle('lines__rotate')
 })
 
 })
