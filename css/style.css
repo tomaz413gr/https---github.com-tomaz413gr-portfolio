@@ -1260,4 +1260,63 @@ body {
 .burger__menu.menu__open {
   transition: transform 0.5s ease-in-out;
   transform: translateX(0%);
+}
+
+.about__company--title {
+  display: flex;
+  margin-top: 7.7333rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .about__company--title {
+    margin-top: 5.0667rem;
+  }
+}
+@media (max-width: 710px) {
+  .about__company--title {
+    justify-content: center;
+  }
+}
+.about__company--title h1 {
+  color: #000;
+  font-size: clamp(1.125rem, 0.695rem + 0.98vw, 1.875rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  text-transform: uppercase;
+  flex-basis: 60%;
+}
+@media (max-width: 710px) {
+  .about__company--title h1 {
+    text-align: center;
+  }
+}
+.about__company--title p {
+  color: #868686;
+  font-size: clamp(0.9rem, 0.8rem + 0.5vw, 1.4rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  flex-basis: 40%;
+  text-align: end;
+}
+@media (max-width: 710px) {
+  .about__company--title p {
+    display: none;
+  }
+}
+
+.about__photo img {
+  width: 100%;
+  margin-top: 3.2rem;
+  object-fit: cover;
+  margin-bottom: 6%;
+}
+@media (max-width: 550px) {
+  .about__photo img {
+    height: 21rem;
+    object-fit: cover;
+    border-radius: 1.3333rem;
+    overflow: hidden;
+  }
 }/*# sourceMappingURL=style.css.map */
