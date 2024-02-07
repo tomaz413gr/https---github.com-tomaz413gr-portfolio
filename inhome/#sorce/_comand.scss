@@ -57,6 +57,7 @@
             font-weight: 400;
             line-height: 1.2;
             color: $grayText;
+
             @media (max-width:768px) {
                 width: 68%;
                 margin: 0 auto;
@@ -71,5 +72,10 @@
         >p {
             flex-basis: 40%;
         }
+    }
+
+    .comand__people {
+        display: flex;
+
     }
 }
