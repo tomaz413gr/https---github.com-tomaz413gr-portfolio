@@ -1,0 +1,42 @@
+.gallery {
+    background-color: $bg;
+    padding: 7% 0;
+
+    .border {
+        margin-bottom: 1.8rem;
+    }
+
+    .gallery__inner {
+        display: flex;
+        @media (max-width:768px) {
+        display: block;
+        }
+
+        .gallery__title {
+            color: $black;
+            flex-basis: 65%;
+            font-size: clamp(1rem, 0.8rem + 1vw, 2rem);
+            font-weight: 600;
+            line-height: 1.3;
+            text-transform: uppercase;
+
+            @media (max-width:768px) {
+                
+                text-align: center;
+            }
+        }
+
+        p {
+            color: $gray;
+            flex-basis: 35%;
+            text-align: right;
+            font-size: clamp(0.6rem, 0.48rem + 0.6vw, 1.2rem);
+            font-weight: 400;
+            line-height: 1.2;
+
+            @media (max-width:768px) {
+                display: none;
+            }
+        }
+    }
+}
