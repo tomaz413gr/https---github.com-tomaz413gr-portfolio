@@ -48,51 +48,21 @@
         .line3 {
             transform: rotate(-45deg);
         }
-
-
-        // display: flex;
-        // position: fixed;
-        // z-index: 8;
-        // animation: fadeInFromNone 0.5s ease-in-out;
-        // animation-fill-mode: forwards;
-
-        // @keyframes fadeInFromNone {
-        //     0% {
-        //         transform: translateX(-150%);
-        //     }
-
-        //     100% {
-        //         transform: translateX(0%);
-        //     }
-        // }
-
-
-
-
-
-
-
     }
 }
 
 .burger__menu {
     display: flex;
     position: fixed;
-    // top: 64px;
-    // left: 0;
     z-index: 1000;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh-61px);
     transition: transform .5s ease-in-out;
     transform: translateX(-150%);
     flex-direction: column;
     justify-content: center;
-    // position: relative;
-    
     background-color: #363A4D;
     opacity: .9;
-    padding: 20px 0;
-    
 
     a {
         color: #FFF;
@@ -110,7 +80,7 @@
         transform: translateX(0%);
     }
 
-    
+
     // animation: fadeOutFromBlock 0.5s ease-in-out;
     // animation-fill-mode: forwards;
 
