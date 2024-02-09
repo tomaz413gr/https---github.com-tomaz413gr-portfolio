@@ -1,5 +1,9 @@
-.price {
-    padding: 2% 0 7%;
+.price__black {
+    background-color: $Applications;
+    padding: 7% 0;
+    .border {
+        margin-bottom: 2.1333rem;
+    }
 
     .price__inner {
         display: flex;
@@ -8,7 +12,7 @@
         .price__inner--item1 {
 
             h3 {
-                color: $black;
+                color: $white;
                 font-size: clamp(0.8rem, 0.68rem + 0.6vw, 1.4rem);
                 font-weight: 600;
                 line-height: 1.5;
@@ -17,10 +21,10 @@
             }
 
             p {
-                color: $graydark;
+                color: $grayText;
                 font-size: 18px;
                 font-weight: 400;
-                line-height: 1.2;
+                line-height: 1.5;
                 margin-bottom: 2.4rem;
             }
         }
@@ -62,22 +66,24 @@
         }
 
         .about__info--item {
-            flex-basis: 30%;
+            flex-basis: 35%;
             padding: 0 1.5% 2%;
 
             h2 {
-                color: $bluelight;
+                color: $white;
                 font-size: 2.4rem;
                 font-style: normal;
                 font-weight: 600;
                 line-height: 150%;
                 text-transform: uppercase;
+                margin-bottom: .4667rem;
 
             }
         }
     }
 
     h4 {
+        color: $white;
         font-size: clamp(0.8rem, 0.68rem + 0.6vw, 1.4rem);
         font-weight: 600;
         line-height: 1.2;
