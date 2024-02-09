@@ -1400,8 +1400,13 @@ body {
   gap: 1rem;
 }
 .comand__people .comand__item {
-  width: 248px;
+  width: 16.5333rem;
   padding-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .comand__people .comand__item {
+    width: 190px;
+  }
 }
 .comand__people .comand__item img {
   border-radius: 20px;
@@ -1425,6 +1430,11 @@ body {
 .gallery {
   background-color: #EBEBEB;
   padding: 7% 0;
+}
+@media (max-width: 1425px) {
+  .gallery {
+    display: none;
+  }
 }
 .gallery .border {
   margin-bottom: 1.8rem;
@@ -1537,23 +1547,32 @@ body {
     margin: 0 auto;
   }
 }
+
 .cont {
   display: grid;
   place-items: center;
-  min-height: 600px;
+  min-height: 40rem;
+}
+@media (min-width: 1425px) {
+  .cont {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .cont {
+    display: none;
+  }
 }
 .cont ul {
   display: flex;
-  width: calc(80% - 2rem);
+  width: calc(100% - 2rem);
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
-
 .cont li {
   padding: 0;
 }
-
 .cont img {
   max-width: 100%;
   width: 100%;
@@ -1561,10 +1580,50 @@ body {
   object-fit: cover;
   transition: all 0.2s ease;
 }
-
 .cont ul:is(:hover, :focus-within) img {
-  opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+  opacity: calc(0.1 + var(--active-lerp, 0) * 0.9);
   filter: grayscale(calc(1 - var(--active-lerp, 0)));
+}
+.cont a {
+  outline-offset: 0.2667rem;
+}
+.cont li {
+  flex: calc(0.1 + var(--active-lerp, 0) * 1);
+  transition: flex 0.2s ease;
+}
+.cont li:is(:hover, :focus-within) {
+  --active-lerp: var(--lerp-0);
+  z-index: 7;
+}
+.cont li:has(+ li:is(:hover, :focus-within)),
+.cont li:is(:hover, :focus-within) + li {
+  --active-lerp: var(--lerp-1);
+  z-index: 6;
+}
+.cont li:has(+ li + li:is(:hover, :focus-within)),
+.cont li:is(:hover, :focus-within) + li + li {
+  --active-lerp: var(--lerp-2);
+  z-index: 5;
+}
+.cont li:has(+ li + li + li:is(:hover, :focus-within)),
+.cont li:is(:hover, :focus-within) + li + li + li {
+  --active-lerp: var(--lerp-3);
+  z-index: 4;
+}
+.cont li:has(+ li + li + li + li:is(:hover, :focus-within)),
+.cont li:is(:hover, :focus-within) + li + li + li + li {
+  --active-lerp: var(--lerp-4);
+  z-index: 3;
+}
+.cont li:has(+ li + li + li + li + li:is(:hover, :focus-within)),
+.cont li:is(:hover, :focus-within) + li + li + li + li + li {
+  --active-lerp: var(--lerp-5);
+  z-index: 2;
+}
+.cont li:has(+ li + li + li + li + li + li:is(:hover, :focus-within)),
+.cont li:is(:hover, :focus-within) + li + li + li + li + li + li {
+  --active-lerp: var(--lerp-6);
+  z-index: 1;
 }
 
 :root {
@@ -1577,47 +1636,15 @@ body {
   --lerp-6: 0;
 }
 
-.cont a {
-  outline-offset: 4px;
+.slider__gallery {
+  margin: 3% 0;
 }
-
-.cont li {
-  flex: calc(0.1 + (var(--active-lerp, 0) * 1));
-  transition: flex 0.2s ease;
+.slider__gallery .slider__gallery--item {
+  padding: 0 10px;
 }
-
-.cont li:is(:hover, :focus-within) {
-  --active-lerp: var(--lerp-0);
-  z-index: 7;
-}
-.cont li:has( + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li {
-  --active-lerp: var(--lerp-1);
-  z-index: 6;
-}
-.cont li:has( + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li {
-  --active-lerp: var(--lerp-2);
-  z-index: 5;
-}
-.cont li:has( + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li {
-  --active-lerp: var(--lerp-3);
-  z-index: 4;
-}
-.cont li:has( + li + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li + li {
-  --active-lerp: var(--lerp-4);
-  z-index: 3;
-}
-.cont li:has( + li + li + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li + li + li {
-  --active-lerp: var(--lerp-5);
-  z-index: 2;
-}
-.cont li:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
-li:is(:hover, :focus-within) + li + li + li + li + li + li {
-  --active-lerp: var(--lerp-6);
-  z-index: 1;
-}
-/*# sourceMappingURL=style.css.map */
+.slider__gallery .slider__gallery--item img {
+  border-radius: 20px;
+  height: 420px;
+  width: 100%;
+  object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

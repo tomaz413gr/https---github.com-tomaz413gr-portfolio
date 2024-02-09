@@ -1,6 +1,9 @@
 .gallery {
     background-color: $bg;
     padding: 7% 0;
+    @media (max-width:1425px) {
+        display: none;
+    }
 
     .border {
         margin-bottom: 1.8rem;

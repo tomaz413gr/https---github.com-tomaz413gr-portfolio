@@ -84,8 +84,11 @@
     
 
     .comand__item {
-        width: 248px;
+        width: 16.5333rem;
         padding-bottom: 2rem;
+        @media (max-width:768px) {
+        width: 190px;
+        }
 
         img {
             border-radius: 20px;

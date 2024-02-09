@@ -62,6 +62,29 @@ $(document).ready(function () {
         ]
     })
 
+    // slider__gallery
+
+    $('.slider__gallery').slick({
+        dots: false,
+        infinite: true,
+        speed: 700,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay:true,
+        autoplaySpeed: 3000,
+        // responsive: [
+        //     {
+        //         breakpoint: 1510,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             arrows: false
+        //         }
+        //     }
+
+        // ]
+    })
+
     // Burger__menu
 
 const hamburger__lines = document.querySelector('.hamburger__lines');
