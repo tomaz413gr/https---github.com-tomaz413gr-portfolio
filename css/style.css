@@ -1431,7 +1431,7 @@ body {
   background-color: #EBEBEB;
   padding: 7% 0;
 }
-@media (max-width: 1425px) {
+@media (max-width: 1424px) {
   .gallery {
     display: none;
   }
@@ -1553,7 +1553,7 @@ body {
   place-items: center;
   min-height: 40rem;
 }
-@media (min-width: 1425px) {
+@media (min-width: 1424px) {
   .cont {
     display: none;
   }
@@ -1639,6 +1639,11 @@ body {
 .slider__gallery {
   margin: 3% 0;
 }
+@media (min-width: 768px) {
+  .slider__gallery {
+    display: none;
+  }
+}
 .slider__gallery .slider__gallery--item {
   padding: 0 10px;
 }
@@ -1647,4 +1652,34 @@ body {
   height: 420px;
   width: 100%;
   object-fit: cover;
+}
+
+.services .border {
+  margin-top: 6%;
+}
+
+.price {
+  padding: 2% 0 7%;
+}
+.price .price__inner {
+  display: flex;
+}
+.price .price__inner .price__inner--item1 h3 {
+  color: #000;
+  font-size: clamp(0.8rem, 0.68rem + 0.6vw, 1.4rem);
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 1.6667rem;
+}
+.price .price__inner .price__inner--item1 p {
+  color: #484848;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
+.price .price__inner--item2 {
+  width: 816px;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
