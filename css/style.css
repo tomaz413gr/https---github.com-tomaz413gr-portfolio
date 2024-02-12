@@ -1816,4 +1816,68 @@ body {
 }
 .price__black .btn__container .btn {
   padding: 0.4333em 2.1em;
+}
+
+.tabs {
+  padding: 7% 0;
+  background-color: #EBEBEB;
+}
+.tabs .border {
+  margin: 0 0 26px;
+}
+.tabs .about__company--title {
+  margin: 0 0 3%;
+}
+.tabs .inner__block {
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: 0 2.2667rem 0 0;
+}
+.tabs .block:not(:last-child) {
+  margin-bottom: 1.0667rem;
+}
+.tabs .block {
+  min-width: 47.7333rem;
+}
+.tabs .block__title {
+  border-top: 1px #A2A2A2 solid;
+  cursor: pointer;
+  color: #000;
+  font-family: "proxima-nova-bold";
+  font-size: 1.2rem;
+  line-height: 1.2;
+  position: relative;
+  padding: 1.4rem 2.2667rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tabs .arrow__tabs--cirkle {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #000;
+  transition: transform 0.3s ease-in-out;
+}
+.tabs .block__title.active svg {
+  transform: rotate(-90deg);
+  fill: rgb(198, 77, 77);
+}
+.tabs .block__title.active {
+  border-bottom: 0;
+}
+.tabs .active--bg {
+  background-color: #EBEBEB;
+  color: black;
+}
+.tabs .block__text {
+  display: none;
+  color: black;
+  background-color: #EBEBEB;
+  padding: 0 50px 20px 30px;
+}
+.tabs .border--tabs {
+  height: 1px;
+  width: 100%;
+  background-color: #A2A2A2;
+  box-shadow: none;
 }/*# sourceMappingURL=style.css.map */

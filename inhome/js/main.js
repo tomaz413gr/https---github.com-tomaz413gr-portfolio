@@ -95,4 +95,21 @@ hamburger__lines.addEventListener('click', function(e) {
     hamburger__lines.classList.toggle('lines__rotate')
 })
 
-})
+});
+
+//Tabs
+
+$(document).ready(function () {
+    $('.block__title').click(function (event) {
+        if ($('.inner__block').hasClass('one')) {
+            $('.block__text').not($(this).next()).slideUp(300);
+            $(this).toggleClass('active');
+            $('.block__title').not($(this)).removeClass('active');
+            $(this).toggleClass('active--bg');
+            $('.block__title').not($(this)).removeClass('active--bg');
+
+        }
+
+        $(this).next().slideToggle(300);
+    });
+});
