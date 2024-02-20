@@ -1829,15 +1829,18 @@ body {
   margin: 0 0 3%;
 }
 .tabs .inner__block {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 2rem;
   margin: 0 auto;
-  max-width: 80rem;
   padding: 0 2.2667rem 0 0;
+}
+.tabs .inner__block .tabs__container {
+  width: 35.6rem;
 }
 .tabs .block:not(:last-child) {
   margin-bottom: 1.0667rem;
-}
-.tabs .block {
-  min-width: 47.7333rem;
 }
 .tabs .block__title {
   border-top: 1px #A2A2A2 solid;
@@ -1851,6 +1854,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.tabs .block__title span {
+  color: #A2A2A2;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-right: 15px;
 }
 .tabs .arrow__tabs--cirkle {
   width: 1.8rem;
