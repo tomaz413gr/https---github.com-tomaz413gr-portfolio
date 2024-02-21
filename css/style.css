@@ -1655,7 +1655,13 @@ body {
 }
 
 .services .border {
-  margin-top: 6%;
+  margin-top: 4%;
+}
+.services .about__company--title {
+  margin-bottom: 0;
+}
+.services .about__company--title h1 {
+  font-size: clamp(1rem, 0.74rem + 1.3vw, 2.3rem);
 }
 
 .price {
@@ -1664,6 +1670,11 @@ body {
 .price .price__inner {
   display: flex;
   gap: 2rem;
+}
+@media (max-width: 1300px) {
+  .price .price__inner {
+    flex-wrap: wrap;
+  }
 }
 .price .price__inner .price__inner--item1 h3 {
   color: #000;

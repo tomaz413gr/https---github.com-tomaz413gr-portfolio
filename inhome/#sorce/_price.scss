@@ -4,6 +4,9 @@
     .price__inner {
         display: flex;
         gap: 2rem;
+        @media (max-width:1300px) {
+        flex-wrap: wrap;
+        }
 
         .price__inner--item1 {
 
