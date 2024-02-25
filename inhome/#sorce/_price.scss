@@ -1,5 +1,6 @@
 .price {
-    padding: 2% 0 7%;
+    padding-top: 2%;
+    margin-bottom: 7%;
 
     .price__inner {
         display: flex;
@@ -10,7 +11,7 @@
         }
 
         .price__inner--item1 {
-
+flex-basis: content;
             h3 {
                 color: $black;
                 font-size: clamp(0.8rem, 0.68rem + 0.6vw, 1.4rem);
@@ -38,6 +39,9 @@
     }
 
     .price__inner--item2 {
+        display: flex;
+        flex-direction: column;
+        
         width: 816px;
         height: 480px;
         flex-shrink: 0;
