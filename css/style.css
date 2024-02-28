@@ -1704,9 +1704,6 @@ body {
 @media (max-width: 1300px) {
   .price .price__inner .price__inner--item2 {
     margin: 0 auto;
-    height: 480px;
-    width: auto;
-    flex-shrink: 1;
   }
 }
 .price .price__inner .price__inner--item2 .price__inner--photoBox img {
@@ -1817,9 +1814,6 @@ body {
 @media (max-width: 1300px) {
   .price__black .price__inner--item2 {
     margin: 0 auto;
-    height: 480px;
-    width: auto;
-    flex-shrink: 1;
   }
 }
 .price__black .price__inner--item2 .price__inner--photoBox img {
@@ -1910,15 +1904,21 @@ body {
 .tabs .inner__block .tabs__container {
   width: 35.6rem;
 }
-.tabs .block:not(:last-child) {
+@media (max-width: 992px) {
+  .tabs .inner__block {
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+}
+.tabs .inner__block .block:not(:last-child) {
   margin-bottom: 1.0667rem;
 }
-.tabs .block__title {
+.tabs .inner__block .block__title {
   border-top: 1px #A2A2A2 solid;
   cursor: pointer;
   color: #000;
   font-family: "proxima-nova-bold";
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.2rem);
   line-height: 1.2;
   position: relative;
   padding: 1.4rem 2.2667rem;
@@ -1926,37 +1926,37 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.tabs .block__title span {
+.tabs .inner__block .block__title span {
   color: #A2A2A2;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.3;
   margin-right: 15px;
 }
-.tabs .arrow__tabs--cirkle {
+.tabs .inner__block .arrow__tabs--cirkle {
   width: 1.8rem;
   height: 1.8rem;
   fill: #000;
   transition: transform 0.3s ease-in-out;
 }
-.tabs .block__title.active svg {
+.tabs .inner__block .block__title.active svg {
   transform: rotate(-90deg);
   fill: rgb(198, 77, 77);
 }
-.tabs .block__title.active {
+.tabs .inner__block .block__title.active {
   border-bottom: 0;
 }
-.tabs .active--bg {
+.tabs .inner__block .active--bg {
   background-color: #EBEBEB;
   color: black;
 }
-.tabs .block__text {
+.tabs .inner__block .block__text {
   display: none;
   color: black;
   background-color: #EBEBEB;
   padding: 0 50px 20px 30px;
 }
-.tabs .border--tabs {
+.tabs .inner__block .border--tabs {
   height: 1px;
   width: 100%;
   background-color: #A2A2A2;
