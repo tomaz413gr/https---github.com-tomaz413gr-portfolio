@@ -16,29 +16,24 @@
         justify-content: center;
         gap: 2rem;
         margin: 0 auto;
-        // max-width: 80rem;
         padding: 0 2.2667rem 0 0;
 
         .tabs__container {
             width: 35.6rem;
         }
 
-      
+
 
         @media (max-width:992px) {
             flex-wrap: wrap;
             margin: 0 auto;
-            // gap: 0;
+            gap: 0;
 
         }
 
         .block:not(:last-child) {
             margin-bottom: 1.0667rem;
 
-        }
-
-        .block {
-            // min-width: 47.7333rem;
         }
 
         .block__title {
@@ -102,11 +97,12 @@
             width: 100%;
             background-color: $border;
             box-shadow: none;
+
+            @media (max-width:992px) {
+                &.first--border {
+                    height: 0;
+                }
+            }
         }
     }
 }
-// @media (max-width:992px) {
-//     .border--tabs.first--border {
-//         height: 0;
-//     }
-// }
