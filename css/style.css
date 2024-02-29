@@ -1947,6 +1947,11 @@ body {
     gap: 0;
   }
 }
+@media (max-width: 500px) {
+  .tabs .inner__block {
+    padding: 0;
+  }
+}
 .tabs .inner__block .block:not(:last-child) {
   margin-bottom: 1.0667rem;
 }
@@ -1969,6 +1974,11 @@ body {
   font-weight: 400;
   line-height: 1.3;
   margin-right: 15px;
+}
+@media (max-width: 500px) {
+  .tabs .inner__block .block__title {
+    padding: 10px;
+  }
 }
 .tabs .inner__block .arrow__tabs--cirkle {
   width: 1.8rem;
@@ -2002,5 +2012,52 @@ body {
 @media (max-width: 992px) {
   .tabs .inner__block .border--tabs.first--border {
     height: 0;
+  }
+}
+
+.contacts .border {
+  margin-top: 4%;
+}
+.contacts .contacts--title {
+  display: flex;
+  margin-top: 7.7333rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .contacts .contacts--title {
+    margin-top: 5.0667rem;
+  }
+}
+@media (max-width: 710px) {
+  .contacts .contacts--title {
+    justify-content: center;
+  }
+}
+.contacts .contacts--title h1 {
+  color: #000;
+  font-size: clamp(1.125rem, 0.695rem + 0.98vw, 1.875rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  text-transform: uppercase;
+  flex-basis: 60%;
+}
+@media (max-width: 710px) {
+  .contacts .contacts--title h1 {
+    text-align: center;
+  }
+}
+.contacts .contacts--title p {
+  color: #868686;
+  font-size: clamp(0.9rem, 0.8rem + 0.5vw, 1.4rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  flex-basis: 40%;
+  text-align: end;
+}
+@media (max-width: 710px) {
+  .contacts .contacts--title p {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
