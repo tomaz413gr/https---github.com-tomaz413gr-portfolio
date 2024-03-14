@@ -2060,4 +2060,52 @@ body {
   .contacts .contacts--title p {
     display: none;
   }
+}
+
+.contacts__info .contacts__info--wrapper {
+  display: flex;
+}
+.contacts__info .contacts__info--main {
+  display: flex;
+}
+.contacts__info .contact__tel {
+  color: #000;
+  font-size: clamp(1.06rem, 0.992rem + 0.34vw, 1.4rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.contacts__info p {
+  font-weight: 400;
+  font-size: clamp(0.8rem, 0.747rem + 0.27vw, 1.067rem);
+  line-height: 150%;
+  color: #717171;
+}
+.contacts__info .contact__mail {
+  color: #000;
+  font-size: clamp(1.06rem, 0.992rem + 0.34vw, 1.4rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+.contacts__info span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #000;
+}
+.contacts__info .contacts__info--social {
+  display: flex;
+}
+.contacts__info .contacts__info--social .contacts__info--border {
+  width: 1px;
+  height: 154px;
+  background-color: #A2A2A2;
+}
+.contacts__info .contacts__info--social .social__ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

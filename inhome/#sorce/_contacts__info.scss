@@ -1,0 +1,58 @@
+.contacts__info {
+    .contacts__info--wrapper {
+        display: flex;
+    }
+
+    .contacts__info--main {
+        display: flex;
+    }
+
+    .contact__tel {
+        color: $black;
+        font-size: clamp(1.06rem, 0.992rem + 0.34vw, 1.4rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+
+    p {
+
+        font-weight: 400;
+        font-size: clamp(0.8rem, 0.747rem + 0.27vw, 1.067rem);
+        line-height: 150%;
+        color: $contP;
+    }
+
+    .contact__mail {
+        color: $black;
+        font-size: clamp(1.06rem, 0.992rem + 0.34vw, 1.4rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        text-transform: uppercase;
+    }
+
+    span {
+
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: $black;
+    }
+
+    .contacts__info--social {
+        display: flex;
+        .contacts__info--border {
+            width: 1px;
+            height: 154px;
+            background-color: $border;
+        }
+        .social__ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+    }
+}
