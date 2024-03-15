@@ -2064,9 +2064,13 @@ body {
 
 .contacts__info .contacts__info--wrapper {
   display: flex;
+  justify-content: space-between;
+  padding: 2% 0 3%;
 }
 .contacts__info .contacts__info--main {
   display: flex;
+  flex-basis: 60%;
+  justify-content: space-between;
 }
 .contacts__info .contact__tel {
   color: #000;
@@ -2078,7 +2082,7 @@ body {
 }
 .contacts__info p {
   font-weight: 400;
-  font-size: clamp(0.8rem, 0.747rem + 0.27vw, 1.067rem);
+  font-size: 1.0667rem;
   line-height: 150%;
   color: #717171;
 }
@@ -2093,7 +2097,7 @@ body {
 .contacts__info span {
   font-weight: 400;
   font-size: 18px;
-  line-height: 150%;
+  line-height: 140%;
   color: #000;
 }
 .contacts__info .contacts__info--social {
@@ -2108,4 +2112,31 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+.mr2 {
+  margin-right: 2rem;
+}
+
+.mr7 {
+  margin-right: 7rem;
+}
+
+.pInline {
+  display: inline;
+}
+
+.ml2 {
+  margin-left: 2rem;
+}
+
+.df {
+  display: flex;
+}
+
+.db {
+  display: block;
 }/*# sourceMappingURL=style.css.map */
