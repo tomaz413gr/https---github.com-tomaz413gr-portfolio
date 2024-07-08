@@ -519,7 +519,7 @@ body {
 .slick-arrow.slick-next {
   right: 107%;
   top: 95%;
-  background: url(/inhome/img/rightarrow.svg) center center no-repeat;
+  background: url(/img/rightarrow.svg) center center no-repeat;
   transition: background-image 0.3s linear, border-color 0.3s linear;
 }
 @media (max-width: 1505px) {
