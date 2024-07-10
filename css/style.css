@@ -503,7 +503,7 @@ body {
 .slick-arrow.slick-prev {
   left: -17%;
   top: 95%;
-  background: url(img/leftarrow.svg) center center no-repeat;
+  background: url(/img/leftarrow.svg) center center no-repeat;
   transition: background-color 0.2s linear, border-color 0.3s linear;
 }
 @media (max-width: 1505px) {
