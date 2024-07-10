@@ -520,7 +520,7 @@ body {
 .slick-arrow.slick-next {
   right: 107%;
   top: 95%;
-  background: url(/img/rightarrow.svg) center center no-repeat;
+  background: url(../img/rightarrow.svg) center center no-repeat;
   transition: background-color 0.2s linear, border-color 0.3s linear;
 }
 @media (max-width: 1505px) {
@@ -849,7 +849,7 @@ body {
 .slider__video .slick-arrow.slick-prev {
   left: 0;
   top: 94%;
-  background: url(/img/leftarrow.svg) center center no-repeat;
+  background: url(../img/leftarrow.svg) center center no-repeat;
   transition: background-color 0.2s linear, border-color 0.3s linear;
 }
 @media (max-width: 1505px) {
@@ -866,7 +866,7 @@ body {
 .slider__video .slick-arrow.slick-next {
   left: 4%;
   top: 94%;
-  background: url(/img/rightarrow.svg) center center no-repeat;
+  background: url(../img/rightarrow.svg) center center no-repeat;
   transition: background-color 0.2s linear, border-color 0.3s linear;
 }
 @media (max-width: 1505px) {
